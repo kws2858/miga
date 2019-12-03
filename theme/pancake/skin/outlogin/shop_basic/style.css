@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* 아웃로그인 스킨 */
+.ol {z-index:999}
+
+.ol a.btn_admin {display:inline-block;padding:0 10px;height:25px;background:#d13f4a;color:#fff;text-decoration:none;line-height:25px;vertical-align:middle} /* 관리자 전용 버튼 */
+.ol a.btn_admin:focus, .ol a.btn_admin:hover {text-decoration:none}
+
+.ol_before_wr {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6)}
+#ol_before{position:absolute;top:50%;left:50%;width:450px;height:500px;margin-left:-225px;margin-top:-250px;padding:45px;background:#fff}
+#ol_before h2{font-size:28px;margin:20px 0}
+#ol_before .btn_close{position:absolute;top:0;right:0;width:60px;height:60px;background:#fff;border:0;color: #ccc;font-size: 18px;}
+#ol_before .btn_close:hover{color:#666}
+#ol_before fieldset {position:relative}
+#ol_id {display:block;width:100%}
+.ol_idlabel {color:#333;}
+#ol_pw {display:block;;width:100%;margin:5px 0}
+.ol_pwlabel {color:#333;}
+#auto_login {}
+#auto_login_label {letter-spacing:-0.1em}
+#ol_submit {width:100%;height:52px;font-size:14px;font-weight:900;}
+.btn_join{display:block;line-height:52px;width:100%;font-size:14px;margin:5px 0;font-weight:900}
+#ol_svc {text-align:center;margin:10px 0 0}
+#ol_svc a{display:inline-block;color:#333;margin:0 5px 5px;text-decoration:underline}
+#ol_auto {position:relative;margin:20px 0;text-align:left;color:#555}
+#ol_auto label {letter-spacing:-0.1em}
+#ol_auto input {width:13px;height:13px;vertical-align:bottom} 
+
+#ol_after {text-align:left;position:fixed;right:0;top:0;height:100%;background:#fff;width:400px;
+-moz-box-shadow:  0px 2px 38px  rgba(0,0,0,0.2);
+-webkit-box-shadow:  0px 2px 38px  rgba(0,0,0,0.2);
+box-shadow: 0px 2px 38px  rgba(0,0,0,0.2);}
+#ol_after h2{padding:20px;line-height:20px;font-size:16px;border-bottom:1px solid #e3e3e3}
+#ol_after .btn_close{position:absolute;top:0;right:0;width:60px;height:60px;background:transparent;border:0;color: #fff;font-size: 18px;z-index:999;opacity:0.5}
+#ol_after .btn_close:hover{opacity:1}
+#ol_after .ol_hd {color:#fff;padding:40px;;position:relative;text-align:center;
+background: rgba(255,0,81,1);
+background: -moz-linear-gradient(-45deg, rgba(255,0,81,1) 0%, rgba(89,33,255,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,0,81,1)), color-stop(100%, rgba(89,33,255,1)));
+background: -webkit-linear-gradient(-45deg, rgba(255,0,81,1) 0%, rgba(89,33,255,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,0,81,1) 0%, rgba(89,33,255,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,0,81,1) 0%, rgba(89,33,255,1) 100%);
+background: linear-gradient(135deg, rgba(255,0,81,1) 0%, rgba(89,33,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0051', endColorstr='#5921ff', GradientType=1 );}
+#ol_after .profile_img{display:inline-block;position:relative}
+#ol_after .profile_img img{;height:auto;border-radius:50px;}
+#ol_after .ol_hd  strong{font-size:1.167em;font-weight:400;display:block;line-height:50px;margin-bottom:5px}
+#ol_after #ol_after_info{position:absolute;bottom:0;right:-5px;background:#fff;width:26px;line-height:26px;display:block;border-radius:50px;text-align:center;box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.1);}
+#ol_after_logout{display:inline-block;padding:0 15px;line-height:30px;background:transparent;color:#fff;border:1px solid #fff}
+#ol_after_logout:hover{background:rgba(255,255,255,0.2)}
+#ol_after_private {border-top:1px solid #eee;padding:20px 0}
+#ol_after_private li{position:relative;display:block;padding:10px 20px;line-height:20px;font-size: 1.083em}
+#ol_after_private li strong{float:right;color:#ff4d4d}
+#ol_after_private li a{display:block;font-weight:300;}
+#ol_after_private li:after {display:block;visibility:hidden;clear:both;content:""} 
+#ol_after_private li:hover{background: -moz-linear-gradient(-45deg, rgba(247,248,249,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(247,248,249,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(247,248,249,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f8f9', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+#ol_after_private li i{text-align:center;width:30px;margin-right:20px;color:#ccc}
+#ol_after_private li .fa-gift{font-size:18px}
+#ol_after_private li .fa-comments-o{font-size:18px}
+#ol_after_private li .fa-question-circle-o {font-size:18px}
