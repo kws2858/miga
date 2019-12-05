@@ -8,6 +8,8 @@ $ca_id_len = strlen($ca_id);
 $len2 = $ca_id_len + 2;
 $len4 = $ca_id_len + 4;
 
+// echo '카테고리 갯수'.$ca_id_len;
+
 
 if($ca_id_len > 2) {
 
@@ -24,7 +26,7 @@ while ($row=sql_fetch_array($result)) {
 
     $row2 = sql_fetch(" select count(*) as cnt from {$g5['g5_shop_item_table']} where (ca_id like '{$row['ca_id']}%' or ca_id2 like '{$row['ca_id']}%' or ca_id3 like '{$row['ca_id']}%') and it_use = '1'  ");
 
-    // $str .= '<li><a href="./list.php?ca_id='.$row['ca_id'].'">'.$row['ca_name'].' </a></li>';
+// $str .= '<li><a href="./list.php?ca_id='.$row['ca_id'].'">'.$row['ca_name'].' </a></li>';
     $str .= '<li><a href="./list.php?ca_id='.$row['ca_id'].'">'.$row['ca_name'].' ('.$row2['cnt'].')</a></li>';
 
     $exists = true;
